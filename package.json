@@ -5,8 +5,13 @@
   "bin": {
     "yumdocs": "./bin/yumdocs"
   },
+  "files": [
+    "bin/yumdocs",
+    "lib/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "upgrade": ""
   },
   "repository": {
     "type": "git",
@@ -18,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/yumdocs/yumdocs-cli/issues"
   },
-  "homepage": "https://github.com/yumdocs/yumdocs-cli#readme"
+  "homepage": "https://github.com/yumdocs/yumdocs-cli#readme",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
 }
