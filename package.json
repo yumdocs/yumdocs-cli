@@ -6,10 +6,11 @@
   "author": "",
   "license": "MIT",
   "bin": {
-    "yumdocs": "./bin/yumdocs"
+    "yumdocs": "bin/index.js"
   },
+  "main": "bin/index.js",
   "files": [
-    "bin/yumdocs",
+    "bin/index.js",
     "lib/"
   ],
   "scripts": {
@@ -40,8 +41,5 @@
     "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.2.2",
     "prettier": "^2.7.1"
-  },
-  "bundleDependencies": [
-    "@yumdocs/yumdocs"
-  ]
+  }
 }
