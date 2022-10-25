@@ -2,6 +2,9 @@
   "name": "@yumdocs/yumdocs-cli",
   "version": "0.0.0",
   "description": "A command line interface for Yumdocs",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "bin": {
     "yumdocs": "./bin/yumdocs"
   },
@@ -10,21 +13,35 @@
     "lib/"
   ],
   "scripts": {
+    "lint": "eslint --ext .js .",
     "test": "jest",
-    "upgrade": ""
+    "upgrade": "ncu -u && npm i"
   },
+  "homepage": "https://github.com/yumdocs/yumdocs-cli#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yumdocs/yumdocs-cli.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yumdocs/yumdocs-cli/issues"
   },
-  "homepage": "https://github.com/yumdocs/yumdocs-cli#readme",
+  "dependencies": {
+    "@yumdocs/yumdocs": "^0.0.5"
+  },
+  "bundledDependencies": [
+    "@yumdocs/yumdocs"
+  ],
   "devDependencies": {
-    "jest": "^29.2.2"
-  }
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.2.2",
+    "prettier": "^2.7.1"
+  },
+  "bundleDependencies": [
+    "@yumdocs/yumdocs"
+  ]
 }
