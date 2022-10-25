@@ -27,10 +27,12 @@
     "url": "https://github.com/yumdocs/yumdocs-cli/issues"
   },
   "dependencies": {
-    "@yumdocs/yumdocs": "^0.0.5"
+    "@yumdocs/yumdocs": "^0.0.5",
+    "yargs": "^17.6.0"
   },
   "bundledDependencies": [
-    "@yumdocs/yumdocs"
+    "@yumdocs/yumdocs",
+    "yargs"
   ],
   "devDependencies": {
     "eslint": "^8.26.0",
