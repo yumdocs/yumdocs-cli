@@ -5,7 +5,7 @@ describe('yumdocs', () => {
        expect(process.env.NODE_ENV).toEqual('test');
     });
 
-    it('yumdocs - missing args', async () => {
+    it('Missing args', async () => {
         try {
             await command();
         } catch(err) {
@@ -13,7 +13,7 @@ describe('yumdocs', () => {
         }
     });
 
-    it('yumdocs - not a file', async () => {
+    it('Template not found', async () => {
         try {
             await command('a b c');
         } catch(err) {
@@ -21,7 +21,23 @@ describe('yumdocs', () => {
         }
     });
 
-    it('yumdocs - should work', async () => {
+    it('JSON not found', async () => {
+        try {
+            await command('./tests/simple.docx b c');
+        } catch(err) {
+            expect(err[0]).toEqual('[31mData file \'b\' not found[39m');
+        }
+    });
+
+    it('JSON malformed', async () => {
+        try {
+            await command('./tests/simple.docx ./authorize.sh c');
+        } catch(err) {
+            expect(err[0]).toEqual('[31mJSON syntax error in \'./authorize.sh\'[39m');
+        }
+    });
+
+    it('Should work', async () => {
         try {
             console.log(__dirname);
             await command('./tests/simple.docx ./tests/data.json ./temp/output.docx');
