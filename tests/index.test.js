@@ -20,4 +20,13 @@ describe('yumdocs', () => {
             expect(err[0]).toEqual('[31mFile not found[39m');
         }
     });
+
+    it('yumdocs - should work', async () => {
+        try {
+            console.log(__dirname);
+            await command('./tests/simple.docx ./tests/data.json ./temp/output.docx');
+        } catch(err) {
+            // expect(err[0]).toEqual('[31mFile not found[39m');
+        }
+    });
 });
