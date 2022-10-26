@@ -6,11 +6,11 @@
   "author": "",
   "license": "MIT",
   "bin": {
-    "yumdocs": "bin/yumdocs"
+    "yumdocs": "bin/yumdocs.mjs"
   },
-  "main": "bin/yumdocs",
+  "main": "bin/yumdocs.mjs",
   "files": [
-    "bin/yumdocs",
+    "bin/yumdocs.mjs",
     "lib/"
   ],
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@yumdocs/yumdocs": "^0.0.5",
-    "chalk": "^4.1.2",
+    "chalk": "^5.1.2",
     "yargs": "^17.6.0"
   },
   "bundledDependencies": [

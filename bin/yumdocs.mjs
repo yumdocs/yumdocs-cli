@@ -1,16 +1,16 @@
 #!/usr/bin/env node
-const cli = require('../lib/index.js');
-const yargs = require('yargs/yargs');
+import cli from '../lib/index.mjs';
+import chalk from 'chalk';
+import yargs from 'yargs/yargs';
 
-process.on('unhandledRejection', (err) => {
-    debugger;
-    console.error(err instanceof Error ? err.message : err);
+process.on('uncaughtException', (error) => {
+    console.error(chalk.red(error instanceof Error ? error.message : error));
     process.exit(1);
 });
 
 const argv = yargs(process.argv.slice(2))
     .scriptName('yumdocs')
-    .usage('Usage: $0 -t [path] -d [path] -o [path]\nShortcut: $0 <template> <data> <output>')
+    .usage(chalk.green('Usage: $0 -t [path] -d [path] -o [path]\nShortcut: $0 <template> <data> <output>'))
     .options({
         't': {
             alias: 'template',
@@ -33,7 +33,7 @@ const argv = yargs(process.argv.slice(2))
     })
     .check((argv, options) => {
         const path = argv._;
-        // Implement shortcut yumdocs <template> <data> <output>
+        // Implement shortcut yumdocs.mjs <template> <data> <output>
         if (path.length === 3 && !argv.template && !argv.data && !argv.output) {
             argv.t = path[0];
             argv.template = path[0];
@@ -47,4 +47,5 @@ const argv = yargs(process.argv.slice(2))
     })
     .argv;
 
-cli(argv);
+await cli(argv);
+process.exit(0);
