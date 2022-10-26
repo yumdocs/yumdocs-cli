@@ -6,11 +6,11 @@
   "author": "",
   "license": "MIT",
   "bin": {
-    "yumdocs": "bin/index.js"
+    "yumdocs": "bin/yumdocs"
   },
-  "main": "bin/index.js",
+  "main": "bin/yumdocs",
   "files": [
-    "bin/index.js",
+    "bin/yumdocs",
     "lib/"
   ],
   "scripts": {
