@@ -1,7 +1,18 @@
 #!/usr/bin/env node
 import cli from '../lib/index.mjs';
 import chalk from 'chalk';
-import yargs from 'yargs/yargs';
+import yargs from 'yargs/yargs'; // Alternatively https://www.npmjs.com/package/commander
+
+if (process.env.NODE_ENV === 'test') {
+    // So as to test messages in Jest
+    const {error} = console;
+    console.error = (message) => {
+        if (message) { // yargs sends undefined messages
+            error(message);
+            process.send(message);
+        }
+    }
+}
 
 process.on('uncaughtException', (error) => {
     console.error(chalk.red(error instanceof Error ? error.message : error));
