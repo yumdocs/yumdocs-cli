@@ -21,7 +21,7 @@ describe('yumdocs', () => {
         }
     });
 
-    it('JSON not found', async () => {
+    xit('JSON not found', async () => {
         try {
             await command('./tests/simple.docx b c');
         } catch(err) {
