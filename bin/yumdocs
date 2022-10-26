@@ -1,5 +1,13 @@
 #!/usr/bin/env node
-const argv = require('yargs/yargs')(process.argv.slice(2))
+import cli from '../lib/index.mjs';
+import yargs from 'yargs/yargs';
+
+process.on('unhandledRejection', (err) => {
+    console.error(err instanceof Error ? err.message : err);
+    process.exit(1);
+});
+
+const argv = yargs(process.argv.slice(2))
     .scriptName('yumdocs')
     .usage('Usage: $0 -t [path] -d [path] -o [path]\nShortcut: $0 <template> <data> <output>')
     .options({
@@ -38,4 +46,5 @@ const argv = require('yargs/yargs')(process.argv.slice(2))
     })
     .argv;
 
-require('../lib/index.js')(argv);
+await cli(argv);
+process.exit(0);
