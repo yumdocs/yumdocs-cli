@@ -28,10 +28,12 @@
   },
   "dependencies": {
     "@yumdocs/yumdocs": "^0.0.5",
+    "chalk": "^4.1.2",
     "yargs": "^17.6.0"
   },
   "bundledDependencies": [
     "@yumdocs/yumdocs",
+    "chalk",
     "yargs"
   ],
   "devDependencies": {

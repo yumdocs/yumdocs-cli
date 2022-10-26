@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-import cli from '../lib/index.mjs';
-import yargs from 'yargs/yargs';
+const cli = require('../lib/index.js');
+const yargs = require('yargs/yargs');
 
 process.on('unhandledRejection', (err) => {
+    debugger;
     console.error(err instanceof Error ? err.message : err);
     process.exit(1);
 });
@@ -46,5 +47,4 @@ const argv = yargs(process.argv.slice(2))
     })
     .argv;
 
-await cli(argv);
-process.exit(0);
+cli(argv);
