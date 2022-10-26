@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x ./bin/yumdocs
+chmod +x ./bin/yumdocs.mjs
