@@ -14,7 +14,7 @@
     "lib/"
   ],
   "scripts": {
-    "lint": "eslint --ext .js .",
+    "lint": "eslint --ext .js,.mjs .",
     "test": "jest",
     "upgrade": "ncu -u && npm i"
   },
