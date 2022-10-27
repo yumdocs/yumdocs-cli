@@ -27,7 +27,7 @@
     "url": "https://github.com/yumdocs/yumdocs-cli/issues"
   },
   "dependencies": {
-    "@yumdocs/yumdocs": "^0.0.5",
+    "@yumdocs/yumdocs": "^0.1.0",
     "chalk": "^5.1.2",
     "yargs": "^17.6.0"
   },
@@ -45,5 +45,10 @@
     "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.2.2",
     "prettier": "^2.7.1"
-  }
+  },
+  "bundleDependencies": [
+    "@yumdocs/yumdocs",
+    "chalk",
+    "yargs"
+  ]
 }
