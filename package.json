@@ -27,7 +27,7 @@
     "url": "https://github.com/yumdocs/yumdocs-cli/issues"
   },
   "dependencies": {
-    "@yumdocs/yumdocs": "^0.1.3",
+    "@yumdocs/yumdocs": "^0.1.4",
     "chalk": "^5.1.2",
     "yargs": "^17.6.0"
   },
