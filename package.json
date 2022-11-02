@@ -1,8 +1,30 @@
 {
   "name": "@yumdocs/yumdocs-cli",
   "version": "0.1.7",
-  "description": "A command line interface for Yumdocs",
-  "keywords": [],
+  "description": "A command line interface for Yumdocs, to automate Word, PowerPoint, and Excel documents",
+  "keywords": [
+    "Microsoft Office",
+    "Word",
+    "PowerPoint",
+    "Excel",
+    "docx",
+    "pptx",
+    "xlsx",
+    "json",
+    "automation",
+    "generation",
+    "creation",
+    "automate",
+    "generate",
+    "create",
+    "merge",
+    "template",
+    "engine",
+    "Node",
+    "JavaScript",
+    "js",
+    "TypeScript"
+  ],
   "author": "https://github.com/jlchereau",
   "license": "MIT",
   "bin": {
@@ -27,9 +49,9 @@
     "url": "https://github.com/yumdocs/yumdocs-cli/issues"
   },
   "dependencies": {
-    "@yumdocs/yumdocs": "^0.1.7",
+    "@yumdocs/yumdocs": "^0.1.8",
     "chalk": "^5.1.2",
-    "yargs": "^17.6.0"
+    "yargs": "^17.6.1"
   },
   "bundledDependencies": [
     "@yumdocs/yumdocs",
