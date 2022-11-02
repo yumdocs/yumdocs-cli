@@ -10,6 +10,7 @@
     "docx",
     "pptx",
     "xlsx",
+    "openxml",
     "json",
     "automation",
     "generation",
