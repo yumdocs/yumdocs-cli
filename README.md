@@ -2,6 +2,8 @@
 
 > A command line interface for Yumdocs, a template engine for Word, PowerPoint and Excel.
 
+![Yumdocs Animation](https://github.com/yumdocs/dev.yumdocs.com/blob/master/graphics/lottie.gif?raw=true)
+
 ## Documentation
 
 Yumdocs is fully documented at https://dev.yumdocs.com.
@@ -43,6 +45,6 @@ npm i -g @yumdocs/yumdocs-cli
 }
 ```
 
-3) Open a terminal window in the project directory and run `yumdocs ./input.docx ./data.json ./output.docx`.
+3) Open a terminal window in the project directory and run `yumdocs input.docx data.json output.docx`.
 
 4) `output.docx` has been generated and the `{{field}}` placeholder has been replaced with `Anything you see fit`.
