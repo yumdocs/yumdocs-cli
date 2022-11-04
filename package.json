@@ -52,7 +52,7 @@
   "dependencies": {
     "@yumdocs/yumdocs": "^0.1.8",
     "chalk": "^5.1.2",
-    "yargs": "^17.6.1"
+    "yargs": "^17.6.2"
   },
   "bundledDependencies": [
     "@yumdocs/yumdocs",
