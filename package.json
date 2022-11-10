@@ -50,7 +50,7 @@
     "url": "https://github.com/yumdocs/yumdocs-cli/issues"
   },
   "dependencies": {
-    "@yumdocs/yumdocs": "^0.1.11",
+    "@yumdocs/yumdocs": "^0.1.12",
     "chalk": "^5.1.2",
     "yargs": "^17.6.2"
   },
