@@ -53,7 +53,7 @@
     "url": "https://github.com/yumdocs/yumdocs-cli/issues"
   },
   "dependencies": {
-    "@yumdocs/yumdocs": "^0.1.13",
+    "@yumdocs/yumdocs": "^0.1.14",
     "chalk": "^5.1.2",
     "yargs": "^17.6.2"
   },
@@ -63,7 +63,7 @@
     "yargs"
   ],
   "devDependencies": {
-    "eslint": "^8.27.0",
+    "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
