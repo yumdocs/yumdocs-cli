@@ -2,11 +2,11 @@
 
 > A command line interface for Yumdocs, a template engine for Word, PowerPoint and Excel.
 
-![Yumdocs Animation](https://github.com/yumdocs/dev.yumdocs.com/blob/master/graphics/lottie.gif?raw=true)
+![Yumdocs Animation](https://github.com/yumdocs/www.yumdocs.com/blob/master/graphics/lottie.gif?raw=true)
 
 ## Documentation
 
-Yumdocs is fully documented at https://dev.yumdocs.com.
+Yumdocs is fully documented at https://www.yumdocs.com.
 
 ## License and Copyright
 
